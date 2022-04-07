@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".Screen2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rainbow_gradient_bg_lightest">
+
+        <Button
+            android:id="@+id/learnButton"
+            android:layout_width="205dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFF9C8"
+            android:onClick="onLearnClick"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="4"
+            android:shadowRadius="1"
+            android:text="Learn"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.632" />
+
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="205dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            android:background="#FFC7C7"
+            android:editable="false"
+            android:foregroundTint="#000000"
+            android:onClick="onCaptureClick"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="4"
+            android:shadowRadius="1"
+            android:text="Capture"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <Button
+            android:id="@+id/importButton"
+            android:layout_width="205dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:backgroundTint="#C7CFFF"
+            android:onClick="onImportClick"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="5"
+            android:shadowDy="4"
+            android:shadowRadius="1"
+            android:text="Import"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/chromaticLensLogoMainMenu"
+            android:layout_width="199dp"
+            android:layout_height="168dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toTopOf="@+id/captureButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.462"
+            app:srcCompat="@drawable/chroml_logo_transparent"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
