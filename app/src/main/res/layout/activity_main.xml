@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rainbow_gradient_bg_lighter"
+    android:background="@drawable/rainbow_Gradient_bg_lighter"
     android:clickable="true"
     android:onClick="onClick"
     tools:context=".MainActivity">
@@ -36,6 +36,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698"
-        app:srcCompat="@drawable/chroml_logo_transparent"
-        tools:srcCompat="@drawable/chroml_logo_transparent" />
+        app:srcCompat="@drawable/chroml_Logo_transparent"
+        tools:srcCompat="@drawable/chroml_Logo_transparent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

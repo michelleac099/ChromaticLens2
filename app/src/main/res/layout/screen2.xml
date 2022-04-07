@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/rainbow_gradient_bg_lightest">
+        android:background="@drawable/rainbow_Gradient_bg_lightest">
 
         <Button
             android:id="@+id/learnButton"
@@ -88,7 +88,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.462"
-            app:srcCompat="@drawable/chroml_logo_transparent"
+            app:srcCompat="@drawable/chroml_Logo_transparent"
             tools:ignore="ImageContrastCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

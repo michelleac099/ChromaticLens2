@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/rainbow_gradient_bg_lightest">
+        android:background="@drawable/rainbow_Gradient_bg_lightest">
 
         <TextView
             android:id="@+id/textView"
