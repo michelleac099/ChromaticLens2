@@ -36,21 +36,4 @@ public class Camera extends Object{
         return null;
     }
 
-    public final void release (){
-        // x.setCamera(null);
-    }
-
-
-    public void setPreviewDisplay(SurfaceHolder mHolder) {
-
-        //Fill
-    }
-
-    public void startPreview() {
-        //Fill
-    }
-
-    public void stopPreview() {
-        //Fill
-    }
 }

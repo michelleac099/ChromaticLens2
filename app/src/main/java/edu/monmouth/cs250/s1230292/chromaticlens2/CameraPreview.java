@@ -2,8 +2,11 @@ package edu.monmouth.cs250.s1230292.chromaticlens2;
 
 import android.content.Context;
 import android.util.Log;
+import android.hardware.Camera;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+
+import java.io.IOException;
 
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
     private SurfaceHolder mHolder;
@@ -23,7 +26,11 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     public void surfaceCreated(SurfaceHolder holder) {
         // The Surface has been created, now tell the camera where to draw the preview.
-        mCamera.setPreviewDisplay(holder);
+        try {
+            mCamera.setPreviewDisplay(holder);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         mCamera.startPreview();
     }
 
