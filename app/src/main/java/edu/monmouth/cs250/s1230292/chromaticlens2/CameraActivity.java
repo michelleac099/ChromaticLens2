@@ -68,6 +68,7 @@ public class CameraActivity extends Activity {
     }
 
     //Take a picture after clicking on the capture button
+    //Opens the emulated camera view
     public void captureButton(View view){
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivity(cameraIntent);

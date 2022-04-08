@@ -15,7 +15,7 @@ public class Screen2 extends AppCompatActivity {
     }
 
     public void onImportClick(View view) {
-        importPic();
+        importPic(view);
     }
 
     public void onLearnClick(View view) {
@@ -40,7 +40,9 @@ public class Screen2 extends AppCompatActivity {
     }
 
     //opens the import pic page
-    public void importPic() {
-        //FILL IN
+    public void importPic(View view) {
+        Intent intent = new Intent(this, ImportPicture.class);
+        startActivity(intent);
     }
+
 }
