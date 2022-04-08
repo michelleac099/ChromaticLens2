@@ -20,11 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     //called when the user taps the "get started" button
     public void onClick(View view) {
-        getStarted();
-    }
-
-    public void getStarted() {
         Intent intent = new Intent(this, Screen2.class);
         startActivity(intent);
     }
+
 }

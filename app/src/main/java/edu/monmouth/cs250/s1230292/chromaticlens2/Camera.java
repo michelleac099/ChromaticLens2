@@ -3,7 +3,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.provider.MediaStore;
-import android.view.SurfaceHolder;
 
 
 public class Camera extends Object{
@@ -17,7 +16,7 @@ public class Camera extends Object{
     }
 
     //instance of the Camera obj
-    public static Camera getCameraInstance(){
+    public static android.hardware.Camera getCameraInstance(){
         Camera c = null;
         try {
             c = Camera.open(); // attempt to get a Camera instance
@@ -25,7 +24,7 @@ public class Camera extends Object{
         catch (Exception e){
             // Camera is not available (in use or does not exist)
         }
-        return c; // returns null if camera is unavailable
+        return null; // returns null if camera is unavailable
     }
 
     //public?

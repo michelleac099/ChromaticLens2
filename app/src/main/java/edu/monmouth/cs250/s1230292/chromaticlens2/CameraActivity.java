@@ -1,5 +1,6 @@
 package edu.monmouth.cs250.s1230292.chromaticlens2;
 
+
 import static edu.monmouth.cs250.s1230292.chromaticlens2.Camera.getCameraInstance;
 import android.app.Activity;
 import android.hardware.Camera;
@@ -10,6 +11,7 @@ import android.widget.FrameLayout;
 
 public class CameraActivity extends Activity {
 
+    public Camera mCamera;
     private CameraPreview mPreview;
     private SurfaceView preview;
     private MediaRecorder mediaRecorder;
