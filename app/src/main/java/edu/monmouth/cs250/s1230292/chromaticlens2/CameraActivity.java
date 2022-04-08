@@ -2,12 +2,20 @@ package edu.monmouth.cs250.s1230292.chromaticlens2;
 
 
 import static edu.monmouth.cs250.s1230292.chromaticlens2.Camera.getCameraInstance;
+
+import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.core.app.ActivityCompat;
 
 public class CameraActivity extends Activity {
 
@@ -21,6 +29,13 @@ public class CameraActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
 
+        //Ask for permission to use camera if not already granted
+        if (ActivityCompat.checkSelfPermission(getApplicationContext(),
+                Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA}, 0);
+        }
+
         // Create an instance of Camera
         mCamera = getCameraInstance();
 
@@ -28,8 +43,8 @@ public class CameraActivity extends Activity {
         mPreview = new CameraPreview(this, mCamera);
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
-
     }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -51,4 +66,11 @@ public class CameraActivity extends Activity {
             mCamera = null;
         }
     }
+
+    //Take a picture after clicking on the capture button
+    public void captureButton(View view){
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivity(cameraIntent);
+    }
+
 }

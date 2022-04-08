@@ -23,7 +23,7 @@ public class Screen2 extends AppCompatActivity {
     }
 
     public void onCaptureClick(View view) {
-        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+       // Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         camera(view);
     }
 
@@ -35,9 +35,8 @@ public class Screen2 extends AppCompatActivity {
 
     //opens the camera page
     public void camera(View view) {
-        Intent intent = new Intent(this, Camera.class);
+        Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
-
     }
 
     //opens the import pic page

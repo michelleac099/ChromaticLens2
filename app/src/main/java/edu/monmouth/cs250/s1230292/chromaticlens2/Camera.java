@@ -3,6 +3,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.provider.MediaStore;
+import android.view.View;
 
 
 public class Camera extends Object{
@@ -27,8 +28,7 @@ public class Camera extends Object{
         return null; // returns null if camera is unavailable
     }
 
-    //public?
-    private static Camera open() {
+    public static Camera open() {
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
 
