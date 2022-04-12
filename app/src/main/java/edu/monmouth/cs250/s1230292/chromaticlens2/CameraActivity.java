@@ -19,10 +19,13 @@ import androidx.core.app.ActivityCompat;
 
 public class CameraActivity extends Activity {
 
-    public Camera mCamera;
+   // modified public to private  public Camera mCamera;
+    private Camera mCamera;
     private CameraPreview mPreview;
     private SurfaceView preview;
     private MediaRecorder mediaRecorder;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,5 +76,6 @@ public class CameraActivity extends Activity {
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivity(cameraIntent);
     }
+
 
 }

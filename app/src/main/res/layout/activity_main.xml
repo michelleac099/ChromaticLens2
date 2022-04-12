@@ -9,23 +9,25 @@
     android:onClick="onClick"
     tools:context=".MainActivity">
 
+
+
     <Button
         android:id="@+id/startButton"
-        android:layout_width="198dp"
-        android:layout_height="62dp"
+
+        android:layout_width="337dp"
+        android:layout_height="122dp"
         android:background="#C1ABFF"
         android:backgroundTint="#DACCF3"
+        android:fontFamily="@font/poppins_medium"
         android:onClick="onClick"
         android:text="Get Started!"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp"
+        android:textColor="#0B0020"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
-
+        app:layout_constraintVertical_bias="0.794" />
 
     <ImageView
         android:id="@+id/chromaticLensLogo"

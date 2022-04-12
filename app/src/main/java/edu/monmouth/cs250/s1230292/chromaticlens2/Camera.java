@@ -7,6 +7,9 @@ import android.view.View;
 
 
 public class Camera extends Object{
+
+
+
     //checks for camera in device
     private boolean checkCameraHardware(Context context) {
         if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA)){
@@ -35,4 +38,8 @@ public class Camera extends Object{
         return null;
     }
 
+
+    public interface PictureCallback {
+         //?? from phtohandler
+    }
 }

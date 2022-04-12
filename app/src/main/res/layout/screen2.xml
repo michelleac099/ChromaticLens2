@@ -10,12 +10,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:background="@drawable/grad_bg_lightest">
 
         <Button
             android:id="@+id/learnButton"
-            android:layout_width="205dp"
-            android:layout_height="67dp"
+            android:layout_width="417dp"
+            android:layout_height="132dp"
             android:layout_weight="1"
             android:backgroundTint="#FFF9C8"
             android:onClick="onLearnClick"
@@ -26,17 +28,18 @@
             android:text="Learn"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="22sp"
+            android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.632" />
+            app:layout_constraintVertical_bias="0.949" />
 
         <Button
             android:id="@+id/captureButton"
-            android:layout_width="205dp"
-            android:layout_height="66dp"
+            android:layout_width="417dp"
+            android:layout_height="127dp"
             android:layout_weight="1"
             android:background="#FFC7C7"
             android:editable="false"
@@ -49,17 +52,18 @@
             android:text="Capture"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="22sp"
+            android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.401" />
 
         <Button
             android:id="@+id/importButton"
-            android:layout_width="205dp"
-            android:layout_height="67dp"
+            android:layout_width="415dp"
+            android:layout_height="138dp"
             android:layout_weight="1"
             android:backgroundTint="#C7CFFF"
             android:onClick="onImportClick"
@@ -70,11 +74,13 @@
             android:text="Import"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="22sp"
+            android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.672"
             tools:ignore="TextContrastCheck" />
 
         <ImageView
