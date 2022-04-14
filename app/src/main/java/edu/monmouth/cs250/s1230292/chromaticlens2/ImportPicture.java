@@ -10,6 +10,7 @@ public class ImportPicture extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.import_screen);
 
+
     }
 
 }

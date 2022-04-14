@@ -60,13 +60,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.401" />
 
+        <ImageView
+            android:id= "@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
         <Button
-            android:id="@+id/importButton"
+            android:id="@+id/gallery"
             android:layout_width="415dp"
             android:layout_height="138dp"
             android:layout_weight="1"
             android:backgroundTint="#C7CFFF"
-            android:onClick="onImportClick"
+
             android:shadowColor="#FFFFFF"
             android:shadowDx="5"
             android:shadowDy="4"
