@@ -1,5 +1,7 @@
 package edu.monmouth.cs250.s1230292.chromaticlens2;
 
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -33,6 +35,13 @@ public class Screen2 extends AppCompatActivity {
         if (resultCode == RESULT_OK && data != null) {
             Uri selectedImage = data.getData();
             ImageView imageView = findViewById(R.id.imageView);
+
+            //sets the image to black and white
+            ColorMatrix matrix = new ColorMatrix();
+            matrix.setSaturation(0);
+
+            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+            imageView.setColorFilter(filter);
             imageView.setImageURI(selectedImage);
         }
     }
