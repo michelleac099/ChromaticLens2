@@ -5,14 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/import_text"
-        android:layout_width="239dp"
-        android:layout_height="74dp"
-        android:text="Import Screen - change later"
-        android:textSize="24sp"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="440dp"
+        android:layout_height="53dp"
+        android:layout_weight="1"
+        android:backgroundTint="#C7CFFF"
+        android:onClick="onCameraRollClick"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        android:text="From camera roll"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spinner_languages"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="192dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

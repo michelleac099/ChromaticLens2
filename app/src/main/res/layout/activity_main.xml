@@ -13,13 +13,12 @@
 
     <Button
         android:id="@+id/startButton"
-
         android:layout_width="337dp"
         android:layout_height="122dp"
         android:background="#C1ABFF"
         android:backgroundTint="#DACCF3"
         android:fontFamily="@font/poppins_medium"
-        android:onClick="onClick"
+        android:onClick="onStartClick"
         android:text="Get Started!"
         android:textColor="#0B0020"
         android:textSize="30sp"

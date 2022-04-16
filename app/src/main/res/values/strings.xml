@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ChromaticLens2</string>
-</resources>
+        <string-array name="languages">
+            <item>No Colorblindness</item>
+            <item>Deutran</item>
+            <item>Protan</item>
+            <item>Tritan</item>
+            <item>Monochromatic</item>
+        </string-array>
+    </resources>

@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //called when the user taps the "get started" button
-    public void onClick(View view) {
+    public void onStartClick(View view) {
         Intent intent = new Intent(this, Screen2.class);
         startActivity(intent);
     }

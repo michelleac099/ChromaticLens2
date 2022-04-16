@@ -18,37 +18,14 @@ public class Screen2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen2);
-        Button gallery = findViewById(R.id.gallery);
-        gallery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, 3);
-            }
-        });
     }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && data != null) {
-            Uri selectedImage = data.getData();
-            ImageView imageView = findViewById(R.id.imageView);
-
-            //sets the image to black and white
-            ColorMatrix matrix = new ColorMatrix();
-            matrix.setSaturation(0);
-
-            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
-            imageView.setColorFilter(filter);
-            imageView.setImageURI(selectedImage);
-        }
-    }
-
 
     public void onLearnClick(View view) {
         learn(view);
+    }
+
+    public void onImportClick(View view) {
+        importPic(view);
     }
 
     public void onCaptureClick(View view) {
@@ -65,6 +42,10 @@ public class Screen2 extends AppCompatActivity {
     //opens the camera page
     public void camera(View view) {
         Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
+    public void importPic(View view) {
+        Intent intent = new Intent(this, ImportPicture.class);
         startActivity(intent);
     }
 }
