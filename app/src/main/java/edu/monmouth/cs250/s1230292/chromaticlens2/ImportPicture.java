@@ -18,8 +18,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ImportPicture extends Activity {
+//import com.google.android.material.navigation.NavigationBarView;
 
+public class ImportPicture extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,22 +43,38 @@ public class ImportPicture extends Activity {
         if (resultCode == RESULT_OK && data != null) {
             Uri selectedImage = data.getData();
             ImageView imageView = findViewById(R.id.imageView);
-
-            //sets the image to black and white
-            ColorMatrix matrix = new ColorMatrix();
-            matrix.setSaturation(0);
-
-            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
-            imageView.setColorFilter(filter);
             imageView.setImageURI(selectedImage);
-
-            Spinner spinnerLanguages = findViewById(R.id.spinner_languages);
-            ArrayAdapter <CharSequence> adapterr = ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
-            adapterr.setDropDownViewResource(android.R.layout.simple_spinner_item);
-            spinnerLanguages.setAdapter(adapterr);
 
         }
     }
 
+    //called when the user taps the "get started" button
+    public void onMonoClick(View view) {
+        ImageView imageView = findViewById(R.id.imageView);
+        ColorMatrix matrix = new ColorMatrix();
+        matrix.setSaturation(0);
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+        imageView.setColorFilter(filter);
     }
+
+    public void onNoneClick(View view) {
+        ImageView imageView = findViewById(R.id.imageView);
+        ColorMatrix matrix = new ColorMatrix();
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+        imageView.setColorFilter(filter);
+    }
+
+    public void onTriClick(View view) {
+
+    }
+    public void onDueClick(View view) {
+
+    }
+
+    public void onProClick(View view) {
+
+    }
+}
+
+
 
