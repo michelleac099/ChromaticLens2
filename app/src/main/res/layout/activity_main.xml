@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/grad_bg_lighter"
     android:clickable="true"
-    android:onClick="onClick"
     tools:context=".MainActivity">
 
 
@@ -15,10 +14,10 @@
         android:id="@+id/startButton"
         android:layout_width="337dp"
         android:layout_height="122dp"
-        android:background="#C1ABFF"
-        android:backgroundTint="#DACCF3"
+        android:backgroundTint="#F6F0BC"
         android:fontFamily="@font/poppins_medium"
         android:onClick="onStartClick"
+        android:background="@drawable/largerroundedrectangle"
         android:text="Get Started!"
         android:textColor="#0B0020"
         android:textSize="30sp"
