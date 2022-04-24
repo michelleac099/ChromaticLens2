@@ -9,18 +9,18 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/startButton"
-        android:layout_width="337dp"
-        android:layout_height="122dp"
-        android:backgroundTint="#F6F0BC"
+        android:layout_width="269dp"
+        android:layout_height="79dp"
+        android:background="@drawable/largerroundedrectangle"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/poppins_medium"
         android:onClick="onStartClick"
-        android:background="@drawable/largerroundedrectangle"
         android:text="Get Started!"
-        android:textColor="#0B0020"
-        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

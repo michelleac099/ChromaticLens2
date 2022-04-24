@@ -2,6 +2,7 @@ package edu.monmouth.cs250.s1230292.chromaticlens2;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.net.Uri;
@@ -111,6 +112,7 @@ public class ImportPicture extends Activity {
                 //  A’= p*R + q*G + r*B + s*A + t;
         })));
     }
+
 }
 
 

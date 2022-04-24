@@ -9,15 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="283dp"
-        android:layout_height="371dp"
+        android:layout_width="327dp"
+        android:layout_height="395dp"
         android:layout_centerInParent="true"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302"
+        app:layout_constraintVertical_bias="0.252"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -40,92 +39,110 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintVertical_bias="0.023"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="147dp"
-        android:layout_height="46dp"
-        android:background="@drawable/roundedrectangle"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:onClick="onMonoClick"
-        android:text="Monochromatic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="305dp"
-        android:layout_height="48dp"
-        android:onClick="onNoneClick"
-        android:textColor="@color/black"
+        android:layout_width="366dp"
+        android:layout_height="53dp"
         android:background="@drawable/roundedrectangle"
-        android:backgroundTint="@color/white"
+        android:onClick="onNoneClick"
         android:text="No colorblindness"
+        android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745"
+        app:layout_constraintVertical_bias="0.73"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="142dp"
-        android:layout_height="46dp"
-        android:onClick="onTriClick"
-        android:textColor="@color/black"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:background="@drawable/roundedrectangle"
         android:backgroundTint="@color/white"
-        android:text="Tritanopia"
+        android:onClick="onTriClick"
+        android:text="Tritan- opia"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
+        app:layout_constraintVertical_bias="0.882"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="134dp"
-        android:layout_height="40dp"
-        android:onClick="onProClick"
-        android:textColor="@color/black"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="104dp"
         android:background="@drawable/roundedrectangle"
         android:backgroundTint="@color/white"
-        android:text="Protanopia"
+        android:onClick="onProClick"
+        android:text="Protan- opia"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="53dp" />
+        app:layout_constraintVertical_bias="0.882"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="142dp"
-        android:layout_height="46dp"
-        android:onClick="onDueClick"
-        android:textColor="@color/black"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:background="@drawable/roundedrectangle"
         android:backgroundTint="@color/white"
-        android:text="Deuteranopia"
+        android:onClick="onDueClick"
+        android:text="Deuteran- opia"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861"
+        app:layout_constraintVertical_bias="0.882"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="197dp"
+        android:layout_height="52dp"
+        android:text="Save to Camera Roll"
+        android:backgroundTint="@color/black"
+        android:textAllCaps="false"
+        android:onClick="imageToRoll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/roundedrectangle"
+        android:backgroundTint="@color/white"
+        android:onClick="onMonoClick"
+        android:text="Mono- chromatic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
