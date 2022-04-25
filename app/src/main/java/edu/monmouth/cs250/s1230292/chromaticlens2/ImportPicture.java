@@ -67,15 +67,16 @@ public class ImportPicture extends Activity {
     }
 
     //tritanopia click,
+    // NO BLUE
     public void onTriClick(View view) {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix2 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix2);
         imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
-                1, 1, 0, 0, 0,
-                0, 0, 0, 0, 0,
-                0, 1, 1, 1, 0,
-                0, 0, 0, 1, 0
+                1, 1, 0, 0, 1,
+                0, 0, 1, 0, 1,
+                0, 1, 1, 0, 0,
+                1, 1, 0, 0, 0
                 // R’ = a*R + b*G + c*B + d*A + e;
                 //  G’ = f*R + g*G + h*B + i*A + j;
                 //  B’ = k*R + l*G + m*B + n*A + o;
@@ -84,28 +85,31 @@ public class ImportPicture extends Activity {
     }
 
     //on deutranopia click
+    // Deuteran = protan + more yellow
+    // NO GREEN
     public void onDueClick(View view) {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix3 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix3);
         imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
-                1, 0, 0, 0, 0,
-                0, 1, 0, 0, 0,
-                0, 0, 1, 0, 0,
-                0, 0, 0, 1, 0
+                1, 1, 0, 0, 1,
+                1, 1, 0, 0, 0,
+                0, 1, 1, 0, 0,
+                1, 0, 0, 1, 0
         })));
     }
 
     // on protanopia click
+    // NO RED
     public void onProClick(View view) {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix4 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix4);
         imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
-                1, 0, 0, 0, 0,
-                1, 0, 0, 0, 0,
+                1, 1, 0, 0, 1,
+                1, 1, 0, 0, 0,
                 0, 1, 1, 0, 0,
-                0, 0, 0, 1, 1
+                1, 0, 0, 1, 0
                 // R’ = a*R + b*G + c*B + d*A + e;
                 //  G’ = f*R + g*G + h*B + i*A + j;
                 //  B’ = k*R + l*G + m*B + n*A + o;
