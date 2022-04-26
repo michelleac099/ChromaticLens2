@@ -16,33 +16,31 @@
 
         <Button
             android:id="@+id/learnButton"
-            android:layout_width="306dp"
-            android:layout_height="107dp"
+            android:layout_width="260dp"
+            android:layout_height="95dp"
             android:layout_weight="1"
-            android:textStyle="bold"
             android:background="@drawable/largerroundedrectangle"
-
-            android:onClick="onLearnClick"
             android:backgroundTint="#ADF6EA79"
+            android:onClick="onLearnClick"
             android:shadowDx="5"
             android:shadowDy="4"
             android:shadowRadius="1"
             android:text="Learn"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="40sp"
+            android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.918" />
+            app:layout_constraintVertical_bias="0.894" />
 
         <Button
             android:id="@+id/captureButton"
-            android:layout_width="305dp"
-            android:textStyle="bold"
-            android:layout_height="111dp"
+            android:layout_width="260dp"
+            android:layout_height="95dp"
             android:layout_weight="1"
             android:background="@drawable/largerroundedrectangle"
             android:backgroundTint="#FFC7C7"
@@ -56,7 +54,8 @@
             android:text="Capture"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="40sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
@@ -67,10 +66,9 @@
 
         <Button
             android:id="@+id/importPic"
-            android:layout_width="306dp"
-            android:layout_height="104dp"
+            android:layout_width="260dp"
+            android:layout_height="95dp"
             android:layout_weight="1"
-            android:textStyle="bold"
             android:background="@drawable/largerroundedrectangle"
             android:backgroundTint="#C7CFFF"
             android:onClick="onImportClick"
@@ -81,13 +79,14 @@
             android:text="Import"
             android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="40sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.672"
+            app:layout_constraintVertical_bias="0.647"
             tools:ignore="TextContrastCheck" />
 
         <ImageView
