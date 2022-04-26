@@ -1,23 +1,30 @@
 package edu.monmouth.cs250.s1230292.chromaticlens2;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 //import com.google.android.material.navigation.NavigationBarView;
 
@@ -72,7 +79,7 @@ public class ImportPicture extends Activity {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix2 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix2);
-        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
+        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new float[]{
                 1, 1, 0, 0, 1,
                 0, 0, 1, 0, 1,
                 0, 1, 1, 0, 0,
@@ -91,7 +98,7 @@ public class ImportPicture extends Activity {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix3 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix3);
-        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
+        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new float[]{
                 1, 1, 0, 0, 1,
                 1, 1, 0, 0, 0,
                 0, 1, 1, 0, 0,
@@ -105,7 +112,7 @@ public class ImportPicture extends Activity {
         ImageView imageView = findViewById(R.id.imageView);
         ColorMatrix matrix4 = new ColorMatrix();
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix4);
-        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new   float[] {
+        imageView.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new float[]{
                 1, 1, 0, 0, 1,
                 1, 1, 0, 0, 0,
                 0, 1, 1, 0, 0,
@@ -116,8 +123,10 @@ public class ImportPicture extends Activity {
                 //  A’= p*R + q*G + r*B + s*A + t;
         })));
     }
+    public void imageToRoll(View view) {
+        ImageView imageView = findViewById(R.id.imageView);
+        Intent intent = new Intent(Intent.ACTION_SEND, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, 3);
+    }
 
 }
-
-
-

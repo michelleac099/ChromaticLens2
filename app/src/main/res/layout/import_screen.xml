@@ -120,7 +120,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_save"
         android:layout_width="180dp"
         android:layout_height="45dp"
         android:background="@drawable/roundedrectangle"
